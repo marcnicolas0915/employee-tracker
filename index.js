@@ -82,3 +82,43 @@ function loadMainPrompts() {
     }
   })
 };
+
+
+function viewAllEmployees() {
+    db.findAllEmployees()
+      .then((results) => {
+        // console.log('Results: ', results);
+        const [rows] = results;
+        let employees = rows;
+        console.log('\n');
+        console.table(employees);
+      })
+      .then(() => loadMainPrompts());
+  };
+  
+
+  function viewAllRoles() {
+    db.findAllRoles()
+      .then((results) => {
+        // console.log('Results: ', results);
+        const [rows] = results;
+        let roles = rows;
+        console.log('\n');
+        console.table(roles);
+      })
+      .then(() => loadMainPrompts());
+  };
+
+  
+function viewAllDepartments() {
+    db.findAllDepartments()
+      .then((results) => {
+        // console.log('Results: ', results);
+        const [rows] = results;
+        let departments = rows;
+        console.log('\n');
+        console.table(departments);
+      })
+      .then(() => loadMainPrompts());
+  };
+  

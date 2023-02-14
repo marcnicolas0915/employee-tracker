@@ -10,3 +10,4 @@ This is a command-line application used to manage a company's employee database.
 5. `npm start`
 
 ## Demo
+[employee-tracker-demo.webm](https://user-images.githubusercontent.com/117967802/218659785-b0e85175-4f2e-413b-9c59-9f160849660b.webm)
